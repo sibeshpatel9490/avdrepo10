@@ -1,15 +1,15 @@
-name: Run streamlit job
+name: Run python job
 on:
     push: 
         branches: 
         - main
 jobs:
-    streamlit-job:
+    ci-pipeline:
         runs-on: ubuntu-latest
           
         steps:
         - name: Checkout Code
           uses: actions/checkout@v2
 
-        - name: Setup Python
-          run: echo ‘welcome…’
+        - name: Print Message
+          run: echo 'welcome to avd'
