@@ -1,19 +1,15 @@
-#name of the workflow
-name: Run Python Program
-
-#Define Trigger
+name: Run streamlit job
 on:
-    push:
-        branches:
+    push: 
+        branches: 
         - main
-        
 jobs:
-    ci-pipeline:
+    streamlit-job:
         runs-on: ubuntu-latest
-
+          
         steps:
-        - name: checkout code
+        - name: Checkout Code
           uses: actions/checkout@v2
-              
-        - name: print welcome message
-          run: echo 'welcome to github action'
+
+        - name: Setup Python
+          run: echo ‘welcome…’
